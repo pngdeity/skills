@@ -62,6 +62,12 @@ This repository contains the .NET team's curated set of core skills and custom a
 
 Once configured, type `/plugins` in Copilot Chat or use the `@agentPlugins` filter in Extensions to browse and install plugins from the marketplace.
 
+### Gemini CLI
+
+```bash
+gemini extensions install https://github.com/dotnet/skills
+```
+
 ### Codex CLI
 
 Skills in this repository follow the [agentskills.io](https://agentskills.io) open standard
