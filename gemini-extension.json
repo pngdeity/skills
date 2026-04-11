@@ -1,6 +1,5 @@
 {
   "name": "dotnet-skills",
   "version": "0.1.0",
-  "description": "Agent skills for .NET development: C#, ASP.NET Core, MSBuild, NuGet, Entity Framework, MAUI, diagnostics, testing, upgrades, AI/ML, and more.",
-  "contextFileName": "GEMINI.md"
+  "description": "Agent skills for .NET development: C#, ASP.NET Core, MSBuild, NuGet, Entity Framework, MAUI, diagnostics, testing, upgrades, AI/ML, and more."
 }
