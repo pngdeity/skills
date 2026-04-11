@@ -39,6 +39,8 @@ tests/
       <fixture files>
 agentic-workflows/
   <plugin>/
+skills/
+  <skill-name> -> ../plugins/<plugin>/skills/<skill-name>  (symlinks for Gemini CLI)
 ```
 
 Every plugin must have a plugin.json file in the plugin root that is linked to from the marketplace.json file.
@@ -55,6 +57,7 @@ To create a new plugin:
 3. Add a CODEOWNERS entry for the new plugin and its tests (see [Code ownership](#code-ownership)).
 4. Add the plugin to the **What's Included** table in the root `README.md`.
 5. Create a `tests/<plugin-name>/` directory for skill tests.
+6. Add a symlink in the root `skills/` directory for each skill in the new plugin (see [Gemini CLI extension](#gemini-cli-extension)).
 
 See existing plugins for the expected format.
 
@@ -69,6 +72,20 @@ Skills in `dotnet-experimental`:
 - Should eventually graduate to a stable plugin or be retired. When a skill has proven itself, move it to the appropriate domain plugin and update tests accordingly.
 
 Place experimental skills under `plugins/dotnet-experimental/skills/` with matching tests in `tests/dotnet-experimental/`.
+
+### Gemini CLI extension
+
+The root `skills/` directory contains symlinks that expose every skill to the [Gemini CLI extension system](https://github.com/google-gemini/gemini-cli). Each symlink maps `skills/<skill-name>` to `../plugins/<plugin>/skills/<skill-name>`. The `gemini-extension.json` manifest at the repo root registers these as agent skills.
+
+When you add or remove a skill, update the symlinks accordingly:
+
+```bash
+# Add a symlink for a new skill
+ln -s ../plugins/<plugin>/skills/<skill-name> skills/<skill-name>
+
+# Remove a symlink for a deleted skill
+rm skills/<skill-name>
+```
 
 ## Before you start
 
@@ -112,6 +129,12 @@ Create a new folder under a plugin's `skills/` directory:
 
 ```text
 plugins/<plugin>/skills/<skill-name>/SKILL.md
+```
+
+Also add a symlink in the root `skills/` directory so the skill is available through the Gemini CLI extension:
+
+```bash
+ln -s ../plugins/<plugin>/skills/<skill-name> skills/<skill-name>
 ```
 
 A skill should answer three questions up front:

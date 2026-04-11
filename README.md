@@ -64,6 +64,8 @@ Once configured, type `/plugins` in Copilot Chat or use the `@agentPlugins` filt
 
 ### Gemini CLI
 
+Install this repository as a [Gemini CLI extension](https://github.com/google-gemini/gemini-cli/blob/main/docs/extensions/index.md) to make all skills available as agent skills:
+
 ```bash
 gemini extensions install https://github.com/dotnet/skills
 ```
