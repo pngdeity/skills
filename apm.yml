@@ -1,0 +1,62 @@
+name: dotnet-skills
+version: 1.0.0
+description: Core skills and custom agents for .NET coding tasks
+marketplace:
+  owner:
+    name: dotnet
+    url: https://github.com/dotnet/skills
+  build:
+    tagPattern: "v{version}"
+  outputs:
+    claude: {}
+    codex:
+      path: .agents/plugins/marketplace.json
+  packages:
+    - name: dotnet
+      description: Collection of core .NET skills for handling common .NET coding tasks.
+      source: ./plugins/dotnet
+      category: Productivity
+    - name: dotnet-data
+      description: Skills for .NET data access and Entity Framework related tasks.
+      source: ./plugins/dotnet-data
+      category: Productivity
+    - name: dotnet-diag
+      description: Skills for .NET performance investigations, debugging, and incident analysis.
+      source: ./plugins/dotnet-diag
+      category: Productivity
+    - name: dotnet-msbuild
+      description: Comprehensive MSBuild and .NET build skills.
+      source: ./plugins/dotnet-msbuild
+      category: Productivity
+    - name: dotnet-nuget
+      description: NuGet and .NET package management.
+      source: ./plugins/dotnet-nuget
+      category: Productivity
+    - name: dotnet-upgrade
+      description: Skills for migrating and upgrading .NET projects.
+      source: ./plugins/dotnet-upgrade
+      category: Productivity
+    - name: dotnet-maui
+      description: Skills for .NET MAUI development.
+      source: ./plugins/dotnet-maui
+      category: Productivity
+    - name: dotnet-ai
+      description: AI and ML skills for .NET.
+      source: ./plugins/dotnet-ai
+      category: Productivity
+    - name: dotnet-template-engine
+      description: .NET Template Engine skills.
+      source: ./plugins/dotnet-template-engine
+      category: Productivity
+    - name: dotnet-test
+      description: Skills for running, diagnosing, and migrating .NET tests.
+      source: ./plugins/dotnet-test
+      category: Productivity
+    - name: dotnet-aspnet
+      description: ASP.NET Core web development skills.
+      source: ./plugins/dotnet-aspnet
+      category: Productivity
+    - name: dotnet-experimental
+      description: Experimental .NET skills.
+      source: ./plugins/dotnet-experimental
+      category: Productivity
