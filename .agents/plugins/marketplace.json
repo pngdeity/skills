@@ -1,0 +1,152 @@
+{
+  "name": "dotnet-skills",
+  "interface": {
+    "displayName": "dotnet-skills"
+  },
+  "plugins": [
+    {
+      "name": "dotnet",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-data",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-data"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-diag",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-diag"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-msbuild",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-msbuild"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-nuget",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-nuget"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-upgrade",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-upgrade"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-maui",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-maui"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-ai",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-ai"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-template-engine",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-template-engine"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-test",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-test"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-aspnet",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-aspnet"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dotnet-experimental",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dotnet-experimental"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
